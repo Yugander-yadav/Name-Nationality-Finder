@@ -307,7 +307,7 @@ await fetch(`https://api.nationalize.io/?name=${value}`)
             tbody.innerHTML+=`<td>${i+1}</td><td>${countriesList[data.country[i].country_id]}</td><td>${Math.round(data.country[i].probability*100)}%</td>`
         }
     }else{
-        tbody.innerHTML="<td colspan=3 style=color:'red'> Couldn't Find the Nationality of the given Name</td>"
+        tbody.innerHTML="<td colspan=3 style=color:'red'>Oops! couldn't find the nationality using the given name Please try a different Name</td>"
     }
     // cell1.innerText=1
     // cell2.innerText=data.country[1].country_id
